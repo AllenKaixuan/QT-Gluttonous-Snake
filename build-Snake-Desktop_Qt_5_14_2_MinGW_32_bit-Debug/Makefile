@@ -247,6 +247,7 @@ Makefile: ../Snake/Snake.pro E:/QT/5.14.2/mingw73_32/mkspecs/win32-g++/qmake.con
 		E:/QT/5.14.2/mingw73_32/mkspecs/features/qt_config.prf \
 		E:/QT/5.14.2/mingw73_32/mkspecs/win32-g++/qmake.conf \
 		E:/QT/5.14.2/mingw73_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		E:/QT/5.14.2/mingw73_32/mkspecs/features/exclusive_builds.prf \
 		E:/QT/5.14.2/mingw73_32/mkspecs/features/toolchain.prf \
 		E:/QT/5.14.2/mingw73_32/mkspecs/features/default_pre.prf \
@@ -275,8 +276,8 @@ Makefile: ../Snake/Snake.pro E:/QT/5.14.2/mingw73_32/mkspecs/win32-g++/qmake.con
 		E:/QT/5.14.2/mingw73_32/lib/Qt5Gui.prl \
 		E:/QT/5.14.2/mingw73_32/lib/Qt5Core.prl \
 		E:/QT/5.14.2/mingw73_32/lib/qtmain.prl \
-		.qmake.stash \
-		E:/QT/5.14.2/mingw73_32/mkspecs/features/build_pass.prf
+		E:/QT/5.14.2/mingw73_32/mkspecs/features/build_pass.prf \
+		../Snake/image.qrc
 	$(QMAKE) -o Makefile ..\Snake\Snake.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 E:/QT/5.14.2/mingw73_32/mkspecs/features/spec_pre.prf:
 E:/QT/5.14.2/mingw73_32/mkspecs/qdevice.pri:
@@ -455,6 +456,7 @@ E:/QT/5.14.2/mingw73_32/mkspecs/features/qt_functions.prf:
 E:/QT/5.14.2/mingw73_32/mkspecs/features/qt_config.prf:
 E:/QT/5.14.2/mingw73_32/mkspecs/win32-g++/qmake.conf:
 E:/QT/5.14.2/mingw73_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 E:/QT/5.14.2/mingw73_32/mkspecs/features/exclusive_builds.prf:
 E:/QT/5.14.2/mingw73_32/mkspecs/features/toolchain.prf:
 E:/QT/5.14.2/mingw73_32/mkspecs/features/default_pre.prf:
@@ -483,8 +485,8 @@ E:/QT/5.14.2/mingw73_32/lib/Qt5Widgets.prl:
 E:/QT/5.14.2/mingw73_32/lib/Qt5Gui.prl:
 E:/QT/5.14.2/mingw73_32/lib/Qt5Core.prl:
 E:/QT/5.14.2/mingw73_32/lib/qtmain.prl:
-.qmake.stash:
 E:/QT/5.14.2/mingw73_32/mkspecs/features/build_pass.prf:
+../Snake/image.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\Snake\Snake.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 
